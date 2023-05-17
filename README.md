@@ -1,4 +1,36 @@
-# S5-19 | 🏁 Entrega: KImóveis - TypeORM com Relacionamentos
+# 🏁 KImóveis - TypeORM com Relacionamentos
+
+## 1. Visão Geral
+
+Visão geral do projeto, um pouco das tecnologias usadas.
+
+- TypeScript
+- Express
+- Typeorm
+- NodeJS
+- Nodemon
+- Sucrase
+- Uuid
+- PostegresSQL
+- Jsonwebtoken
+- Bcryptjs
+- Dotenv
+- Yup
+- Express-async-errors
+
+Endpoints do serviço:
+Método	Endpoint	Responsabilidade
+POST	/users	Criação de usuário
+GET	/users	Lista todos os usuários
+PATCH	/users	Atualiza um usuário
+DELETE	/users/<id>	Realiza um soft delete no usuário
+POST	/login	Gera o token de autenticação
+POST	/categories	Criação de categoria
+GET	/categories/<id>/properties	Lista todos imóveis que pertencem a uma categoria
+POST	/properties	Criação de um imóvel
+GET	/properties	Lista todos os imóveis
+POST	/schedules	Agenda uma visita a um imóvel
+GET	/schedules/properties/<id>	lista todos os agendamentos de um imóvel
 
 Para inciar este projeto, é necessário instalar as dependências, que serão utilizadas nos testes. Portanto utilize o comando abaixo para instalar tais dependências:
 
@@ -84,7 +116,3 @@ Após rodar um dos comandos aparecerá um log no seu terminal, contendo as infor
 **Observação:** O teste pode demorar alguns segundos para ser finalizado. Quanto maior for o teste, mais tempo será consumido para a execução.
 
 #
-
-
-
-### Agora que já sabe como iniciar o seu projeto e rodar os testes, é hora de colocar a mão no código!
